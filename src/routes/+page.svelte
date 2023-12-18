@@ -19,6 +19,12 @@
     </main>
 
 <style>
+
+::selection {
+  background: #f6ff00; /* WebKit/Blink Browsers */
+  color: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -40,7 +46,6 @@ main {
 
 :global(body){
     margin: 3rem;
-    padding: 0;
     font: 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
@@ -49,7 +54,7 @@ main {
   color: white;
   text-align: center;
   width: 100%;
-    height: 100%;
+  height: 70%;
 }
 
 .logo-row {
@@ -60,6 +65,7 @@ main {
 
 .logo-item {
   flex: 1;
+  margin: 0 10px; /* Optional: Adds some space between the logos */
 }
 
 </style>
