@@ -5,23 +5,26 @@
           <h1>Adrian Fabisiewicz</h1>
         </div>
       </div>
-      <!-- all the links for social media, use for loop and links object -->
-      <div class="logo-row"> <!-- Add this div -->
+      <div class="logo-row">
         {#each Object.keys(links) as link}
-          <div class="logo-item"> <!-- Add this class -->
+          <div class="logo-item">
             <a href={links[link].link}>
               <img src={links[link].logo} alt={link} width="50px" height="50px">
             </a>
           </div>
         {/each}
-      </div> <!-- Close the div -->
+      </div>
     </div>
     </main>
+
+<svelte:head>
+  <title>Adrian Fabisiewicz</title>
+</svelte:head>
 
 <style>
 
 ::selection {
-  background: #f6ff00; /* WebKit/Blink Browsers */
+  background: #f6ff00;
   color: black;
 }
 
