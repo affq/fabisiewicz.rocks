@@ -17,7 +17,7 @@
 </div>
 </main>
 <footer>
-  <p>2023 &copy;</p>
+  <p>2023</p>
 </footer>
 
 <svelte:head>
@@ -72,7 +72,7 @@ main {
 }
 
 :global(body), :global(html){
-    margin: 0.5rem;
+    margin:0.5rem;
     font: 1rem 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #dca2e8;
     height: 100%;
@@ -113,6 +113,13 @@ main {
 
 .head-surname {
   color: #dca2e8;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 0.7rem;
 }
 
 </style>
