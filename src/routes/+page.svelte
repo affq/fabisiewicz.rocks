@@ -1,48 +1,61 @@
-    <main>
-    <div class="container">
-      <div class="row">
-        <div class="name">
-          <h1>Adrian Fabisiewicz</h1>
-        </div>
-      </div>
-      <div class="logo-row">
-        {#each Object.keys(links) as link}
-          <div class="logo-item">
-            <a href={links[link].link}>
-              <img src={links[link].logo} alt={link} width="50px" height="50px">
-            </a>
-          </div>
-        {/each}
-      </div>
+<main>
+<div class="container">
+  <div class="row">
+    <div class="name">
+      <h1>Adrian <span class="head-surname">Fabisiewicz</span></h1>
     </div>
-    </main>
+  </div>
+  <div class="logo-row">
+    {#each Object.keys(links) as link}
+      <div class="logo-item">
+        <a href={links[link].link}>
+          <img src={links[link].logo} class="logo-img" alt={link}>
+        </a>
+      </div>
+    {/each}
+  </div>
+</div>
+</main>
+<footer>
+  <p>2023 &copy;</p>
+</footer>
 
 <svelte:head>
   <title>Adrian Fabisiewicz</title>
 </svelte:head>
 
 <style>
-@media (max-width: 650px) {
+@media (max-width: 432px) {
   .logo-row {
     flex-direction: column;
   }
 
-  .logo-item {
-    margin: 10px 0;
-  }
-
   .name {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
   }
 
-  :global(body){
-    margin: 1rem;
-    font: 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  .head-surname {
+    color: #dca2e8;
   }
+
+  .logo-item {
+    flex: 1;
+    margin: 40px 10px;
+  }
+
+  .container {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
 }
 
 ::selection {
-  background: #f6ff00;
+  background: #dca2e8;
   color: black;
 }
 
@@ -58,15 +71,23 @@ main {
   height: 100%;
 }
 
-.name {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
+:global(body), :global(html){
+    margin: 0.5rem;
+    font: 1rem 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #dca2e8;
+    height: 100%;
 }
 
-:global(body){
-    margin: 3rem;
-    font: 1rem "Helvetica Neue", sans-serif;
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 432px){
+  .logo-item {
+  flex: 1;
+  margin: 0 10px;
 }
 
 .container {
@@ -74,18 +95,24 @@ main {
   color: white;
   text-align: center;
   width: 100%;
-  height: 70%;
+  padding: 2rem;
 }
 
-.logo-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Optional: Adds some space between the logos */
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
 }
 
-.logo-item {
-  flex: 1;
-  margin: 0 10px; /* Optional: Adds some space between the logos */
+.logo-img {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 3.4rem;
+}
+
+.head-surname {
+  color: #dca2e8;
 }
 
 </style>
@@ -100,13 +127,13 @@ main {
       logo: 'github-mark-white.png',
       link: 'https://www.github.com/affq'
     },
-    "linkedin": {
-      logo: 'In-White-128@2x.png',
-      link: 'https://www.linkedin.com/in/fabisiewicz/'
-    },
     "instagram": {
       logo: 'Instagram_Glyph_White.png',
       link: 'https://www.instagram.com/afabisiewicz/'
+    },
+    "linkedin": {
+      logo: 'In-White-128@2x.png',
+      link: 'https://www.linkedin.com/in/fabisiewicz/'
     }
   }
   
