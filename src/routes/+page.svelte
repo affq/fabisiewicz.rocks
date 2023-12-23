@@ -22,6 +22,24 @@
 </svelte:head>
 
 <style>
+@media (max-width: 650px) {
+  .logo-row {
+    flex-direction: column;
+  }
+
+  .logo-item {
+    margin: 10px 0;
+  }
+
+  .name {
+    margin-bottom: 2rem;
+  }
+
+  :global(body){
+    margin: 1rem;
+    font: 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  }
+}
 
 ::selection {
   background: #f6ff00;
@@ -36,20 +54,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   width: 100%;
+  height: 100%;
 }
 
 .name {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 5rem;
 }
 
 :global(body){
     margin: 3rem;
-    font: 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font: 1rem "Helvetica Neue", sans-serif;
 }
 
 .container {
