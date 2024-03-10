@@ -17,7 +17,7 @@
 </div>
 </main>
 <footer>
-  <p>2023</p>
+  <p>2024</p>
 </footer>
 
 <svelte:head>
