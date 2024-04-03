@@ -124,6 +124,8 @@ footer {
 
 </style>
 <script lang="ts">
+  import { inject } from '@vercel/analytics'
+
   interface Link {
     logo: string;
     link: string;
