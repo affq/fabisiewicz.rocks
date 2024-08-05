@@ -1,10 +1,10 @@
 import React from "react";
 
-const Projects = () => (
+const Test = () => (
     <div>
         {/* <h1>projekty</h1>
         <p>...soon</p> */}
     </div>
 );
 
-export default Projects;
+export default Test;
