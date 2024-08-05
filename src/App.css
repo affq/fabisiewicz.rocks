@@ -1,5 +1,5 @@
 ::selection {
-  background: #dca2e8;
+  background: #bcd001;
   color: black;
 }
 
@@ -22,7 +22,8 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
+  border-radius: 30px;
 }
 
 .name {
@@ -42,7 +43,7 @@
 }
 
 .head-surname {
-  color: #dca2e8;
+  color: #bcd001;
 }
 
 footer {
@@ -62,7 +63,7 @@ footer {
 }
 
 .projects-link{
-  color: #dca2e8;
+  color: #bcd001;
   text-decoration: none;
   font-size: 2rem;
   padding: 3rem;
@@ -81,10 +82,23 @@ html, body {
 }
 
 body {
-  background-color: #dca2e8;
+  background-color: #bcd001;
 }
 .app{
   display: grid;
-  place-items: center; /* Wyśrodkowanie w obu kierunkach */
-  height: 100vh; /* Możesz dostosować wysokość do swoich potrzeb */
+  place-items: center;
+  height: 100vh;
+}
+
+ul{
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+a{
+  font-weight: bold;
+}
+
+a:hover{
+  transition: transform 0.2s ease-in-out;
 }

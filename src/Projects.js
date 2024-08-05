@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => (
     <div>
-        <h1>projekty</h1>
-        <p>...soon</p>
+        {/* <h1>projekty</h1>
+        <p>...soon</p> */}
     </div>
 );
 

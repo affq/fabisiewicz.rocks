@@ -14,6 +14,10 @@ const links = {
   "linkedin": {
     logo: '/In-White-128@2x.png',
     link: 'https://www.linkedin.com/in/fabisiewicz/'
+  },
+  "mail": {
+    logo: '/icons8-gmail-50.png',
+    link: 'mailto:adrianfabisiewicz@gmail.com'
   }
 }
 
@@ -54,12 +58,12 @@ function App(){
           </div>
         </div>
         <LinksList />
-        <div class="project">
-        <Link to="/projects" class="projects-link">projekty</Link>
-        </div>
       </div>
-
     <footer>
+      <ul>
+        <li><a href="https://ambasady.vercel.app/" target='_blank'>ambasady</a></li>
+        <li><a href="https://systemy.streamlit.app/" target='_blank'>systemy nawigacji satelitarnej</a></li>
+      </ul>
     </footer>
   </div>
   );
