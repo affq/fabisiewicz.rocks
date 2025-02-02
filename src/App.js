@@ -17,7 +17,7 @@ const links = {
   },
   "mail": {
     logo: '/icons8-gmail-50.png',
-    link: 'mailto:adrianfabisiewicz@gmail.com'
+    link: 'mailto:adrian@fabisiewicz.rocks'
   }
 }
 
