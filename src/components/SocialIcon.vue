@@ -20,6 +20,17 @@ img{
     height: 4vw;
     min-width: 30px;
     min-height: 30px;
+    transition: transform 0.4s ease-out;
+}
+
+a:hover{
+   background: none;
+}
+
+img:hover{
+    width: 5vw;
+    height: 5vw;
+    transform: scale(1.3);
 }
 
 @media (prefers-color-scheme: light){
