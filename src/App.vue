@@ -22,8 +22,14 @@ import SocialCollection from './components/SocialCollection.vue'
 h1{
   font-family: monospace;
   font-size: max(8vw, 40px);
-  color: cyan;
+  color: #00ffff;
   letter-spacing: 1vw;
+}
+
+@media (prefers-color-scheme: light){
+  h1{
+  color: #6f23b7;
+}
 }
 
 </style>

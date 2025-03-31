@@ -21,4 +21,10 @@ img{
     min-width: 30px;
     min-height: 30px;
 }
+
+@media (prefers-color-scheme: light){
+    img{
+        filter: brightness(0);
+    }
+}
 </style>
